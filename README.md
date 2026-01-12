@@ -1,7 +1,6 @@
 # Fortnite EAC Launcher
 
-Haven’t seen many posts on Fortnite’s EAC launcher, so this repository contains (some) of its named modules, decrypted modules,  
-and resolved import table. (Educational Purposes Only)
+Haven’t seen many posts on Fortnite’s EAC launcher, so this repository contains (some) of its named modules, decrypted modules, and resolved import table. (Educational Purposes Only)
 
 ## Named Modules, Decrypted Modules, and Import Table
 
