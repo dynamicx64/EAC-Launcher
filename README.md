@@ -1,1 +1,76 @@
-# EAC-Launcher
+# Fortnite EAC Launcher
+
+Haven’t seen many posts on Fortnite’s EAC launcher,  
+so this repository contains (some) of its named modules, decrypted modules,  
+and resolved import table. (Educational Purposes Only)
+
+## Named Modules, Decrypted Modules, and Import Table
+
+```text
+Library     Offset Address        Function
+----------  -------------------   ----------------------------
+ADVAPI32    0x0000000000003198    OpenSCManagerW
+ADVAPI32    0x00000000000031A0    ControlService
+ADVAPI32    0x00000000000031A8    StartServiceW
+ADVAPI32    0x00000000000031B0    QueryServiceConfigW
+ADVAPI32    0x00000000000031B8    OpenServiceW
+ADVAPI32    0x00000000000031C0    QueryServiceStatus
+ADVAPI32    0x00000000000031C8    CloseServiceHandle
+
+KERNEL32    0x0000000000003000    MapViewOfFile
+KERNEL32    0x0000000000003008    LoadLibraryW
+KERNEL32    0x0000000000003010    GetProcAddress
+KERNEL32    0x0000000000003018    FreeLibrary
+KERNEL32    0x0000000000003020    GetSystemTimeAsFileTime
+KERNEL32    0x0000000000003028    ReadFile
+KERNEL32    0x0000000000003030    GetFileSizeEx
+KERNEL32    0x0000000000003038    FindFirstFileW
+KERNEL32    0x0000000000003040    FindNextFileW
+KERNEL32    0x0000000000003048    GetModuleFileNameW
+KERNEL32    0x0000000000003050    FindClose
+KERNEL32    0x0000000000003058    GetFileInformationByHandle
+KERNEL32    0x0000000000003060    GetModuleHandleW
+KERNEL32    0x0000000000003068    GetLocaleInfoW
+KERNEL32    0x0000000000003070    CreateToolhelp32Snapshot
+KERNEL32    0x0000000000003078    Process32NextW
+KERNEL32    0x0000000000003080    Process32FirstW
+KERNEL32    0x0000000000003088    WaitForSingleObject
+KERNEL32    0x0000000000003090    CreateEventW
+KERNEL32    0x0000000000003098    SetEvent
+KERNEL32    0x00000000000030A0    ResetEvent
+KERNEL32    0x00000000000030A8    EnterCriticalSection
+KERNEL32    0x00000000000030B0    UnmapViewOfFile
+KERNEL32    0x00000000000030B8    InitializeCriticalSection
+KERNEL32    0x00000000000030C0    DeleteCriticalSection
+KERNEL32    0x00000000000030C8    GetLastError
+KERNEL32    0x00000000000030D0    MultiByteToWideChar
+KERNEL32    0x00000000000030D8    WideCharToMultiByte
+KERNEL32    0x00000000000030E0    FileTimeToSystemTime
+KERNEL32    0x00000000000030E8    GetSystemDirectoryW
+KERNEL32    0x00000000000030F0    GetCurrentProcessId
+KERNEL32    0x00000000000030F8    QueryDosDeviceW
+KERNEL32    0x0000000000003100    GetVolumePathNameW
+KERNEL32    0x0000000000003108    GetLogicalDriveStringsW
+KERNEL32    0x0000000000003110    DeviceIoControl
+KERNEL32    0x0000000000003118    GetProcessId
+KERNEL32    0x0000000000003120    GetSystemWow64DirectoryW
+KERNEL32    0x0000000000003128    SetEnvironmentVariableW
+KERNEL32    0x0000000000003130    OpenEventW
+KERNEL32    0x0000000000003138    OpenFileMappingW
+KERNEL32    0x0000000000003140    OpenProcess
+KERNEL32    0x0000000000003148    WaitForSingleObjectEx
+KERNEL32    0x0000000000003150    GetExitCodeProcess
+KERNEL32    0x0000000000003158    CreateFileW
+KERNEL32    0x0000000000003160    GetSystemTime
+KERNEL32    0x0000000000003168    QueryPerformanceCounter
+KERNEL32    0x0000000000003170    CreateThread
+KERNEL32    0x0000000000003178    CloseHandle
+KERNEL32    0x0000000000003180    QueryPerformanceFrequency
+KERNEL32    0x0000000000003188    LeaveCriticalSection
+KERNEL32    0x00000000000031D8    GetModuleFileNameW
+KERNEL32    0x00000000000031E8    GetModuleHandleA
+KERNEL32    0x00000000000031F0    LoadLibraryA
+KERNEL32    0x00000000000031F8    LocalAlloc
+KERNEL32    0x0000000000003200    LocalFree
+KERNEL32    0x0000000000003208    GetModuleFileNameA
+KERNEL32    0x0000000000003210    ExitProcess
